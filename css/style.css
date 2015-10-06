@@ -1,0 +1,222 @@
+.container .row{
+  overflow:hidden;
+}
+
+body{
+  background:#501212;
+}
+
+.container{
+  color:#CE9A00;
+}
+
+.facebook{
+  position:relative;
+  border-radius:50%;
+  width:5em;
+  height:5em;
+  color:white;
+  overflow:hidden;
+  opacity: .85;
+  transition: all .5s ease-in-out;
+}
+
+.fb-ic{
+  transition:inherit;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:4em;
+}
+.fb-ic:after{
+  transition:inherit;
+  content: "f";
+}
+
+.facebook:hover .fb-ic{
+  animation-name: bounce;
+  animation-duration:3s;
+}
+
+.facebook:hover{
+  background: #18189E;
+}
+
+.twitter{
+  position:relative;
+  border-radius:50%;
+  height:5em;
+  width:5em;
+  transition: all 1s ease;
+  z-index:50;
+}
+
+.twitter-inner{
+  position:absolute;
+  transition: inherit;
+  z-index:1;
+  height:100%;
+  width:5em;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.twitter-inner:after{
+  transition:inherit;
+  position:absolute;
+  z-index:10;
+  content:"";
+  background-image: url(http://i304.photobucket.com/albums/nn192/taterandjoes/Twitter-logo-bird_logo_2012_zpsofp9kkeu.png);
+  height:4em;
+  width:4em;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-size:contain;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+
+.roll-right{
+  animation-name: roll-right;
+  animation-duration: 1s;
+  overflow:hidden;
+}
+
+.twitter:hover{
+  background-color: #3398FF;
+}
+
+.twitter:hover .twitter-inner:after{
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iterations:1;
+  animation-timing:ease-in;
+}
+
+.github{
+  position:relative;
+  border-radius: 50%;
+  height:5em;
+  width:5em;   
+  overflow:hidden;
+  transition: 1s ease-in-out;
+}
+
+.github:hover{
+  background:black;
+}
+
+.github-inner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  content:"";
+  height:4em;
+  width:4em;
+  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/ghub_zpsijhkuxzi.png);
+  background-repeat:no-repeat; 
+  background-size:contain;
+}
+
+.github:hover .github-inner{
+  animation-name: bounce;
+  animation-duration:3s;
+}
+
+.g-plus{
+  font-family: 'Gentium Basic', serif;
+  position:relative;
+  width: 5em;
+  height:5em;
+  border-radius:50%;
+}
+
+.gplus-inner{
+  color:white;
+  width:5em;
+  height:5em;
+  transition: 1s all ease-in-out;
+  border-radius:50%;
+}
+
+.gplus-inner:after{
+  content: "g+";
+  position:absolute;
+  top:50%;
+  left:50%;
+  font-size:400%;
+  transform: translate(-50%, -50%);
+}
+
+.g-plus:hover .gplus-inner{
+  color: red;
+  background: white;
+}
+
+.g-plus:hover .gplus-inner:after{
+  animation-name: bounce;
+  animation-duration:3s;
+}
+
+@keyframes bounce{
+  10%{top:38%;}
+  20%{top:50%;}
+  30%{top:40%;}
+  40%{top:50%;}
+  50%{top:42%;}
+  60%{top:50%;}
+  70%{top:44%;}
+  80%{top:50%;}
+  90%{top:46%;}
+  100%{top:50%;}
+}
+
+.codepen{
+  position:relative;
+  height:5em;
+  width:5em;
+  transition: 1s all ease-in-out;
+  border-radius:50%;
+}
+
+.codepen-inner{
+  height:5em;
+  width:5em;
+  transition:inherit;
+}
+
+.codepen-inner:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height:5em;
+  width:5em;
+  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/codepen-512-black_zpsv9y3362v.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.codepen:hover{
+  background:black;
+}
+
+.codepen:hover .codepen-inner:after{
+  animation-name: bounce;
+  animation-duration:3s;
+}
+
+@keyframes roll-right{
+  from {
+    left:-300%;
+    transform: rotate(0deg);
+  }
+  to{
+    left:0;
+    transform: rotate(360deg);
+  }
+}
