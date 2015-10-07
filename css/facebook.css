@@ -7,6 +7,10 @@
   transition: all .5s ease;
 }
 
+.facebook-fill{
+  background: #18189E;
+}
+
 .fb-ic{
   transition:inherit;
   color:white;

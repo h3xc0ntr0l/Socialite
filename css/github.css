@@ -7,6 +7,10 @@
   filter:blur(50%);
 }
 
+.github-fill{
+  background: #000;
+}
+
 .github:hover{
   background:black;
 }

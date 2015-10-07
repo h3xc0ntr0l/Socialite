@@ -9,6 +9,10 @@
   transition: 1s all ease;
 }
 
+.gplus-fill{
+  background:#D81010;
+}
+
 .gplus-inner{
   transition: 1s all ease;
   font-size:200%;
@@ -29,7 +33,7 @@
 }
 
 .g-plus:hover{
-  background:black;
+  background:#D81010;
 }
 
 .g-plus:hover .gplus-inner:after{

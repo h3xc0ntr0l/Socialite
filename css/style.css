@@ -9,6 +9,7 @@
   margin-bottom:1em;
   padding-top:1em;
   padding-bottom:1em;
+  margin-left:1em;
 }
 
 
@@ -35,10 +36,7 @@ html, body{
   border-radius: 50%;
 }
 
-.colored{
-
-}
 
 .colored:hover{
-  background:transparent;
+  background:transparent !important;
 }

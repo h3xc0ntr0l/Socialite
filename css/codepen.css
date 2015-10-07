@@ -5,6 +5,10 @@
   transition: 1s all ease;
 }
 
+.codepen-fill{
+  background:black;
+}
+
 .codepen-inner{
   height:100%;
   width:100%;

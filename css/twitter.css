@@ -6,6 +6,10 @@
   transition: all 1s ease;
 }
 
+.twitter-fill{
+  background-color: #3398FF; 
+}
+
 .twitter-inner{
   position:absolute;
   transition: inherit;
