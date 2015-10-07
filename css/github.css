@@ -8,8 +8,8 @@
 }
 
 
-.github:hover{
-  background:black;
+.transparent.github:hover{
+  background:black !important;
 }
 
 .github-inner{
@@ -25,3 +25,8 @@
   background-size:contain;
 }
 
+.bounce.github:hover .github-inner{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function:ease;
+}

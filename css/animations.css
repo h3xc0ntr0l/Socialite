@@ -1,5 +1,27 @@
+.roll-right{
+  animation-name: roll-right;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay:4s;
+}
+
+
+.bounce{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function:ease;
+  animation-delay:4s;
+}
+
+.shift-down{
+  top:initial;
+  animation-name: container-shift-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+
 @keyframes bounce{
-  0%{top:initial;}
   1%{top:0%;}
   3%{top:10%;}
   7%{top:19%;}
@@ -26,3 +48,39 @@
     transform: rotate(2160deg);
   }
 }
+
+@keyframes container-shift-up{
+  from{
+    top: 0;
+  }
+  to{
+    top:-10%;
+  }
+}
+
+@keyframes container-shift-left{
+  from{
+    right:0;
+  }
+  to{
+    right:10%;
+  }
+}
+@keyframes container-shift-down{
+  from{
+    top:0;
+  }
+  to{
+    top:10%;
+  }
+}
+
+@keyframes container-shift-right{
+  from{
+    left:0;
+  }
+  to{
+    left:10%;
+  }
+}
+

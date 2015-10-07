@@ -3,14 +3,22 @@
   height:inherit;
   width:5rem;
   transition: 1s all ease;
+}
+
+.codepen:after{
+  content:"";
+  position:absolute;
   background:black;
+  width: 5rem;
+  height:5rem;
 }
 
 
 .codepen-inner{
+  position:absolute;
   height:100%;
   width:100%;
-  transition:inherit;
+  transition: 1s all ease !important; 
 }
 
 .codepen-inner:after{
@@ -18,14 +26,42 @@
   position:absolute;
   top:50%;
   left:50%;
+  transition:inherit;
   transform: translate(-50%, -50%);
-  height:75% !important;
-  width:75% !important;
+  height:100% !important;
+  width:100% !important;
   background: url(../img/codepen.png);
   background-size:contain;
   background-repeat:no-repeat;
+  z-index:2;
 }
 
-.codepen:hover{
-  background:black;
+.transparent.codepen:after{
+  background: rgba(0,0,0,0) !important;
+}
+
+.transparent.codepen:hover{
+  background:black !important;
+}
+
+
+/*temporary hack for codepen..*/
+
+
+.bounce.codepen:hover .codepen-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}
+
+.sd.codepen:hover:after{
+  animation-name: container-shift-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.sd.codepen:hover .codepen-inner:after{
+  animation-name: container-shift-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }

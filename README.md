@@ -1,4 +1,5 @@
 # Simple Social Media Icons
+## Current under heavy development. See "v2" branch. v2 will become "Socialite" repository.
 
 
 ### Note that due to the repositories infancy (it is currently, at time of writing, less than 3 days old), there are __no__   browser prefixes. I am testing in Chrome (various releases, various laptops, all Ubuntu). Please, report ALL bugs!
@@ -43,7 +44,8 @@ Simple usage example:
 And that's it!
 
 ###Another couple things...
- Transparent backgrounds?
+
+###Transparent backgrounds
 
 ```
 <div class="facebook transparent">

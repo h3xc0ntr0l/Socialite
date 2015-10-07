@@ -22,6 +22,18 @@
   content:"f";
 }
 
+.bounce.facebook:hover .fb-ic{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.facebook:hover.shift-down {
+  animation-name: container-shift-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
 .facebook:hover{
-  background: #18189E;
+  background: #18189E !important;
 }

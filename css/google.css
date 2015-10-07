@@ -10,6 +10,10 @@
   background:#D81010;
 }
 
+.transparent.g-plus:hover{
+  background:#D81010 !important;
+}
+
 .gplus-inner{
   transition: 1s all ease;
   font-size:200%;
@@ -30,3 +34,8 @@
 }
 
 
+.bounce.g-plus:hover .gplus-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}

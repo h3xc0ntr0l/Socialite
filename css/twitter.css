@@ -20,7 +20,13 @@
   background-repeat:no-repeat;
 }
 
-.twitter:hover{
-  background-color: #3398FF;
+.transparent.twitter:hover{
+  background-color: #3398FF !important;
+}
+
+.bounce.twitter:hover .twitter-inner{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function:ease;
 }
 

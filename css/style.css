@@ -21,7 +21,9 @@
 
 #icon-col *{
   display:inline-block;
+  transition: 1s all ease !important;
 }
+
 
 .transparent{
   background: transparent !important;
@@ -59,19 +61,3 @@ html, body{
   background:transparent !important;
 }
 
-.infinite{
-  animation-iteration-count: infinite;
-}
-
-.roll-right{
-  animation-name: roll-right;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-  animation-delay:4s;
-}
-
-.bounce{
-  animation-name: bounce;
-  animation-duration: 1.5s;
-  animation-timing-function:ease;
-}
