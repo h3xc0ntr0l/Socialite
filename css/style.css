@@ -72,7 +72,7 @@
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  background-image: url(http://i304.photobucket.com/albums/nn192/taterandjoes/Twitter-logo-bird_logo_2012_zpsofp9kkeu.png);
+  background-image: url(../img/twitter.png);
   background-size:contain;
   background-repeat:no-repeat;
 }
@@ -114,7 +114,7 @@
   content:"";
   height:70%;
   width:70%;
-  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/ghub_zpsijhkuxzi.png);
+  background: url(../img/ghub.png);
   background-repeat:no-repeat; 
   background-size:contain;
 }
@@ -202,7 +202,7 @@
   transform: translate(-50%, -50%);
   height:75%;
   width:75%;
-  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/codepen-512-black_zpsv9y3362v.png);
+  background: url(../img/codepen.png);
   background-size:contain;
   background-repeat:no-repeat;
 }
