@@ -1,9 +1,6 @@
-# Simple Social Media Icons
-## Current under heavy development. See "v2" branch. v2 will become "Socialite" repository.
+# Socialite - Elegant social media plugins for Bootstrap
 
-
-### Note that due to the repositories infancy (it is currently, at time of writing, less than 3 days old), there are __no__   browser prefixes. I am testing in Chrome (various releases, various laptops, all Ubuntu). Please, report ALL bugs!
-
+## INFANT project! Less than 1 week old, come contribute!
 
 ##### The easiest way to learn these components. ALL icons are simply wrapped in a column, with a container element
  aptly named after the social media you are writing markup for (e.g., class="facebook" for the facebook icon        container), and then there is an inner element (with the exception of facebook, [social media]-inner is the rule).
