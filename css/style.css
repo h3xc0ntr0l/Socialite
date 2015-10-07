@@ -11,7 +11,7 @@
   background: #2B0909;
 }
 
-#icon-col{
+.icon-col{
   margin-top:5rem;
   margin-bottom:5rem;
   padding-top:5rem;
@@ -19,10 +19,16 @@
   height:5rem;
 }
 
-#icon-col *{
+.icon-col *{
   display:inline-block;
   transition: 1s all ease !important;
 }
+
+
+/*need to figure out which of the above is needed. develop a module component!*/
+
+
+
 
 
 .transparent{
@@ -52,12 +58,7 @@ html, body{
   background:#6D513A;  
 }
 
-.circular-icon{
+.circular{
   border-radius: 50%;
-}
-
-
-.colored:hover{
-  background:transparent !important;
 }
 

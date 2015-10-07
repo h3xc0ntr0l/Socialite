@@ -14,12 +14,14 @@
 }
 
 .shift-down{
-  top:initial;
   animation-name: container-shift-down;
   animation-duration: 1s;
   animation-timing-function: ease;
 }
 
+.shift-down{
+  animation-delay
+}
 
 @keyframes bounce{
   1%{top:0%;}
@@ -68,10 +70,10 @@
 }
 @keyframes container-shift-down{
   from{
-    top:0;
+    margin-top:initial;
   }
   to{
-    top:10%;
+    margin-top:1em;
   }
 }
 
