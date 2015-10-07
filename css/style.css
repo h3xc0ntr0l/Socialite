@@ -1,42 +1,56 @@
-.container .row{
+#smr{
   overflow:hidden;
-}
-
-body{
   background:#501212;
 }
 
+ #smr .col-md-12 *{
+  float:left;
+}
 .container{
   color:#CE9A00;
+  position:relative;
+}
+
+.bg{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:400%;
+  background:#6D513A;  
+}
+
+.circle-icon{
+  border-radius: 50%;
 }
 
 .facebook{
   position:relative;
-  border-radius:50%;
-  width:5em;
-  height:5em;
+  width:5rem;
+  height:5rem;
   color:white;
   overflow:hidden;
-  opacity: .85;
-  transition: all .5s ease-in-out;
+  transition: all .5s ease;
 }
 
 .fb-ic{
   transition:inherit;
+  color:white;
   position:absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  font-size:4em;
+  font-size:400%;
 }
+
 .fb-ic:after{
-  transition:inherit;
-  content: "f";
+  content:"f";
 }
 
 .facebook:hover .fb-ic{
   animation-name: bounce;
-  animation-duration:3s;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
 }
 
 .facebook:hover{
@@ -45,42 +59,28 @@ body{
 
 .twitter{
   position:relative;
-  border-radius:50%;
-  height:5em;
-  width:5em;
+  height:5rem;
+  width:5rem;
   transition: all 1s ease;
-  z-index:50;
 }
 
 .twitter-inner{
   position:absolute;
   transition: inherit;
-  z-index:1;
-  height:100%;
-  width:5em;
+  height:50%;
+  width:50%;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-}
-.twitter-inner:after{
-  transition:inherit;
-  position:absolute;
-  z-index:10;
-  content:"";
   background-image: url(http://i304.photobucket.com/albums/nn192/taterandjoes/Twitter-logo-bird_logo_2012_zpsofp9kkeu.png);
-  height:4em;
-  width:4em;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
   background-size:contain;
   background-repeat:no-repeat;
-  overflow:hidden;
 }
 
 .roll-right{
   animation-name: roll-right;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
+  animation-timing: ease;
   overflow:hidden;
 }
 
@@ -88,20 +88,18 @@ body{
   background-color: #3398FF;
 }
 
-.twitter:hover .twitter-inner:after{
+.twitter:hover .twitter-inner{
   animation-name: bounce;
-  animation-duration: 3s;
-  animation-iterations:1;
-  animation-timing:ease-in;
+  animation-duration: 1.5s;
 }
 
 .github{
   position:relative;
-  border-radius: 50%;
-  height:5em;
-  width:5em;   
-  overflow:hidden;
-  transition: 1s ease-in-out;
+  height:5rem;
+  width:5rem;   
+/*  overflow:hidden;*/
+  transition: 1s ease;
+  filter:blur(50%);
 }
 
 .github:hover{
@@ -114,8 +112,8 @@ body{
   left:50%;
   transform: translate(-50%, -50%);
   content:"";
-  height:4em;
-  width:4em;
+  height:70%;
+  width:70%;
   background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/ghub_zpsijhkuxzi.png);
   background-repeat:no-repeat; 
   background-size:contain;
@@ -123,45 +121,54 @@ body{
 
 .github:hover .github-inner{
   animation-name: bounce;
-  animation-duration:3s;
+  animation-duration:1.5s;
+  animation-timing-function: ease;
 }
 
 .g-plus{
   font-family: 'Gentium Basic', serif;
+  color:white;
+  width: 5rem;
+  text-align:center;
+  height:5rem;
   position:relative;
-  width: 5em;
-  height:5em;
-  border-radius:50%;
+  transition: 1s all ease;
 }
 
 .gplus-inner{
-  color:white;
-  width:5em;
-  height:5em;
-  transition: 1s all ease-in-out;
-  border-radius:50%;
+  transition: 1s all ease;
+  font-size:200%;
+  text-align:center;
+  height:5rem;
+  width:100%;
+  transform: translate(25%, 0);
 }
 
 .gplus-inner:after{
-  content: "g+";
+  transition:inherit;
   position:absolute;
+  padding-right:50%;
   top:50%;
   left:50%;
-  font-size:400%;
   transform: translate(-50%, -50%);
+  content:"g+";
 }
 
-.g-plus:hover .gplus-inner{
-  color: red;
-  background: white;
+.g-plus:hover{
+  background:black;
 }
 
 .g-plus:hover .gplus-inner:after{
   animation-name: bounce;
-  animation-duration:3s;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
 }
 
 @keyframes bounce{
+  0%{top:initial;}
+  1%{top:0%;}
+  3%{top:10%;}
+  7%{top:19%;}
   10%{top:38%;}
   20%{top:50%;}
   30%{top:40%;}
@@ -176,15 +183,14 @@ body{
 
 .codepen{
   position:relative;
-  height:5em;
-  width:5em;
-  transition: 1s all ease-in-out;
-  border-radius:50%;
+  height:5rem;
+  width:5rem;
+  transition: 1s all ease;
 }
 
 .codepen-inner{
-  height:5em;
-  width:5em;
+  height:100%;
+  width:100%;
   transition:inherit;
 }
 
@@ -194,8 +200,8 @@ body{
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  height:5em;
-  width:5em;
+  height:75%;
+  width:75%;
   background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/codepen-512-black_zpsv9y3362v.png);
   background-size:contain;
   background-repeat:no-repeat;
@@ -207,16 +213,17 @@ body{
 
 .codepen:hover .codepen-inner:after{
   animation-name: bounce;
-  animation-duration:3s;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
 }
 
 @keyframes roll-right{
   from {
-    left:-300%;
+    left:-100%;
     transform: rotate(0deg);
   }
   to{
     left:0;
-    transform: rotate(360deg);
+    transform: rotate(2160deg);
   }
 }
