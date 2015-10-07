@@ -17,124 +17,170 @@
 
   <body>
 
-    <div class="container">
-  <div class="bg"></div>
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="page-title">
         <h1> Social Media Icons in CSS</h1>
+        <small style="font-size:125%"> Work in progress. Github repository located <a href="https://github.com/h3xc0ntr0l/Social-Media-CSS-Icons">here.</a> Original work by <a href="mailto:michael@michaelfward.com">Michael Ward.</a></small>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
       <div class="page-title">
-        <h3> Base CSS </h3>
+        <h2> Base CSS </h2>
       </div>
     </div>
   </div>
-  <div class="row smr" style="background:#501212;">
-    <div class="col-md-2">
-      <h1> Vertical, no margin (vanilla) </h1>
-    </div>
-    <div class="col-md-10">
-      <div class="facebook roll-right">
-        <div class="fb-ic"></div>
-      </div>
-      <div class="twitter roll-right">
-        <div class="twitter-inner">
-        </div>
-      </div>
-      <div class="github roll-right">
-        <div class="github-inner"></div>
-      </div>
-      <div class="g-plus roll-right">
-        <div class="gplus-inner"></div>
-      </div>
-      <div class="codepen roll-right">
-        <div class="codepen-inner"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row smr" style="background:#2B0909;">
+  <div class="row smr">
     <div class="col-md-2">
       <h1> Horizontal, no margin (vanilla) </h1>
     </div>
-    <div class="col-md-10 horizontal">
-      <div class="facebook roll-right">
+    <div class="col-md-10" id="icon-col">
+      <div class="facebook">
         <div class="fb-ic"></div>
       </div>
-      <div class="twitter roll-right">
+      <div class="github">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter">
         <div class="twitter-inner">
         </div>
       </div>
-      <div class="github roll-right">
-        <div class="github-inner"></div>
-      </div>
-      <div class="g-plus roll-right">
-        <div class="gplus-inner"></div>
-      </div>
-      <div class="codepen roll-right">
+      <div class="codepen">
         <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus">
+        <div class="gplus-inner"></div>
       </div>
     </div>
   </div>
-  <div class="row smr" style="background:#501212;">
+  <div class="row smr">
+    <div class="col-md-2">
+      <h1> Vertical, no margin (vanilla) </h1>
+    </div>
+    <div class="col-md-10 vertical">
+      <div class="facebook">
+        <div class="fb-ic"></div>
+      </div>
+      <div class="github">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter">
+        <div class="twitter-inner">
+        </div>
+      </div>
+      <div class="codepen">
+        <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus">
+        <div class="gplus-inner"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row smr">
     <div class="col-md-2">
       <h1> Circular </h1>
     </div>
-    <div class="col-md-10">
-      <div class="facebook roll-right circular-icon">
+    <div class="col-md-10" id="icon-col">
+      <div class="facebook circular-icon">
         <div class="fb-ic"></div>
       </div>
-      <div class="twitter roll-right circular-icon">
+      <div class="github circular-icon">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter circular-icon">
         <div class="twitter-inner">
         </div>
       </div>
-      <div class="github roll-right circular-icon">
-        <div class="github-inner"></div>
-      </div>
-      <div class="g-plus roll-right circular-icon">
-        <div class="gplus-inner"></div>
-      </div>
-      <div class="codepen roll-right circular-icon">
+      <div class="codepen circular-icon">
         <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus circular-icon">
+        <div class="gplus-inner"></div>
       </div>
     </div>
   </div>
-<div class="row smr" style="background:#2B0909;">
+  <div class="row smr">
     <div class="col-md-2">
-      <h1> Colored Background </h1>
+      <h1> Transparent Background </h1>
     </div>
-    <div class="col-md-10">
-      <div class="facebook roll-right colored facebook-fill">
+    <div class="col-md-10" id="icon-col">
+      <div class="facebook colored transparent">
         <div class="fb-ic"></div>
       </div>
-      <div class="twitter roll-right colored twitter-fill">
+      <div class="github colored transparent">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter colored transparent">
         <div class="twitter-inner">
         </div>
       </div>
-      <div class="github roll-right colored github-fill">
-        <div class="github-inner"></div>
-      </div>
-      <div class="g-plus roll-right colored gplus-fill">
-        <div class="gplus-inner"></div>
-      </div>
-      <div class="codepen roll-right colored codepen-fill">
+      <div class="codepen colored transparent">
         <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus colored transparent">
+        <div class="gplus-inner"></div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
       <div class="page-title">
-        <h3> Animations </h3>
+        <h2> Animations.</h2><small> Note that in this pen, "animation-iteration-count" is set to infinite, and in the library, it is not. </small>
       </div>
     </div>
   </div>
-
+  <div class="row smr">
+    <div class="col-md-2">
+      <h1>Roll Right</h1>
+    </div>
+    <div class="col-md-10" id="icon-col">
+      <div class="facebook roll-right infinite">
+        <div class="fb-ic"></div>
+      </div>
+      <div class="github roll-right infinite">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter roll-right infinite">
+        <div class="twitter-inner">
+        </div>
+      </div>
+      <div class="codepen roll-right infinite">
+        <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus roll-right infinite">
+        <div class="gplus-inner"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row smr" id="bounce-col">
+    <div class="col-md-2">
+      <h1>Bounce (hover)</h1>
+    </div>
+    <div class="col-md-10" id="icon-col">
+      <div class="facebook infinite">
+        <div class="fb-ic"></div>
+      </div>
+      <div class="github infinite">
+        <div class="github-inner"></div>
+      </div>
+      <div class="twitter infinite">
+        <div class="twitter-inner">
+        </div>
+      </div>
+      <div class="codepen infinite">
+        <div class="codepen-inner"></div>
+      </div>
+      <div class="g-plus infinite">
+        <div class="gplus-inner"></div>
+      </div>
+    </div>
+  </div>
 </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='js/script.js'></script>
 
     
     

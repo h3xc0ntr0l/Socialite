@@ -1,15 +1,12 @@
 .github{
   position:relative;
-  height:5rem;
+  height:inherit;
   width:5rem;   
 /*  overflow:hidden;*/
   transition: 1s ease;
-  filter:blur(50%);
-}
-
-.github-fill{
   background: #000;
 }
+
 
 .github:hover{
   background:black;
@@ -21,15 +18,10 @@
   left:50%;
   transform: translate(-50%, -50%);
   content:"";
-  height:70%;
-  width:70%;
+  height:70% !important;
+  width:70% !important;
   background: url(../img/ghub.png);
   background-repeat:no-repeat; 
   background-size:contain;
 }
 
-.github:hover .github-inner{
-  animation-name: bounce;
-  animation-duration:1.5s;
-  animation-timing-function: ease;
-}

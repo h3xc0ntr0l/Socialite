@@ -1,14 +1,11 @@
 .facebook{
   position:relative;
   width:5rem;
-  height:5rem;
+  height:inherit;
   color:white;
   overflow:hidden;
-  transition: all .5s ease;
-}
-
-.facebook-fill{
   background: #18189E;
+  transition: all .5s ease;
 }
 
 .fb-ic{
@@ -23,12 +20,6 @@
 
 .fb-ic:after{
   content:"f";
-}
-
-.facebook:hover .fb-ic{
-  animation-name: bounce;
-  animation-duration:1.5s;
-  animation-timing-function:ease;
 }
 
 .facebook:hover{

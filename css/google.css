@@ -4,12 +4,9 @@
   color:white;
   width: 5rem;
   text-align:center;
-  height:5rem;
+  height:inherit;
   position:relative;
   transition: 1s all ease;
-}
-
-.gplus-fill{
   background:#D81010;
 }
 
@@ -32,12 +29,4 @@
   content:"g+";
 }
 
-.g-plus:hover{
-  background:#D81010;
-}
 
-.g-plus:hover .gplus-inner:after{
-  animation-name: bounce;
-  animation-duration:1.5s;
-  animation-timing-function:ease;
-}
