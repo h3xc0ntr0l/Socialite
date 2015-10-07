@@ -1,0 +1,30 @@
+
+
+@keyframes bounce{
+  0%{top:initial;}
+  1%{top:0%;}
+  3%{top:10%;}
+  7%{top:19%;}
+  10%{top:38%;}
+  20%{top:50%;}
+  30%{top:40%;}
+  40%{top:50%;}
+  50%{top:42%;}
+  60%{top:50%;}
+  70%{top:44%;}
+  80%{top:50%;}
+  90%{top:46%;}
+  100%{top:50%;}
+}
+
+
+@keyframes roll-right{
+  from {
+    left:-100%;
+    transform: rotate(0deg);
+  }
+  to{
+    left:0;
+    transform: rotate(2160deg);
+  }
+}

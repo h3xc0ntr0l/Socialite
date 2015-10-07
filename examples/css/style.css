@@ -1,0 +1,341 @@
+.snav {
+  top:50%;
+  margin-left:-15px;
+  background: rgb(0, 0, 0);
+  width:5rem;
+  height:25rem;
+  display:inline-block;
+  z-index:99;
+  transition: 1s all ease-in;
+  transform: translate(0, -50%);
+  opacity:0;
+}
+
+
+.horiz{
+  top:0;
+  margin-left: auto;
+  margin-right:auto;
+  z-index:99;
+  left:50%;
+  transition: 1s all ease;
+  transform: translate(-50%, 0);
+  opacity:0;
+  display:inline-block;
+}
+
+#horiz{
+  background: rgb(0,0,0);
+  width:26.6rem;
+  height:5rem;  
+}
+
+.affix{
+  opacity:.5;
+}
+
+.affix:hover{
+  opacity:.9;
+}
+
+.sidebar {
+  overflow: hidden;
+  transition: 1s all ease;
+  background: orange;
+  margin-top:15px;
+  margin-left:-15px;
+  color: white;
+  opacity: 1;
+  text-align:center;
+}
+
+#sidebar{
+  z-index:99;
+  height:5rem;
+  width:5rem;
+}
+
+
+#horiz *{
+  display:inline-block;
+  padding:0;
+  margin:0;
+}
+
+.sidebar i{
+  padding-top: 1rem;
+  font-size:200%;
+}
+
+.sidebar:active{
+  background: white;
+}
+
+.sidebar:active i{
+  color:black;
+}
+
+.sidebar:hover{
+  color:black;
+  background: rgba(255,255,255,0);
+  font-size:125%;
+}
+
+.sidebar:active {
+  opacity: 0 !important;
+}
+
+.sidebar:active .sidebar:after {
+  border-left: 1.5em solid red;
+  opacity: .4;
+}
+
+.lorem {
+  line-height: 2em;
+  font-size: 125%;
+  text-shadow: 1px 1px #ccc;
+  text-indent: 2em;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  transition: 1s all ease;
+}
+
+.lorem:after {
+  content: "";
+  margin: 2em;
+}
+
+.slide-in {
+  left:0;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-timing-function:ease;
+}
+
+@keyframes slide-left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+#smr{
+  overflow:hidden;
+  height:25rem;
+  width:5rem;
+}
+
+.container-fluid{
+  position:relative;
+}
+
+.circle-icon{
+  border-radius: 50%;
+}
+
+.facebook{
+  position:relative;
+  width:5rem;
+  height:5rem;
+  color:white;
+  overflow:hidden;
+  transition: all .5s ease;
+}
+
+.fb-ic{
+  transition:inherit;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:400%;
+}
+
+.fb-ic:after{
+  content:"f";
+}
+
+.facebook:hover .fb-ic{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}
+
+.facebook:hover{
+  background: #18189E;
+}
+
+.twitter{
+  position:relative;
+  height:5rem;
+  width:5rem;
+  transition: all 1s ease;
+}
+
+.twitter-inner{
+  position:absolute;
+  transition: inherit;
+  height:50%;
+  width:50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-image: url(http://i304.photobucket.com/albums/nn192/taterandjoes/Twitter-logo-bird_logo_2012_zpsofp9kkeu.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.roll-right{
+  animation-name: roll-right;
+  animation-duration: 1.5s;
+  animation-timing: ease;
+  overflow:hidden;
+}
+
+.twitter:hover{
+  background-color: #3398FF;
+}
+
+.twitter:hover .twitter-inner{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+}
+
+.github{
+  position:relative;
+  height:5rem;
+  width:5rem;   
+/*  overflow:hidden;*/
+  transition: 1s ease;
+  filter:blur(50%);
+}
+
+.github:hover{
+  background:black;
+}
+
+.github-inner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  content:"";
+  height:70%;
+  width:70%;
+  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/ghub_zpsijhkuxzi.png);
+  background-repeat:no-repeat; 
+  background-size:contain;
+}
+
+.github:hover .github-inner{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function: ease;
+}
+
+.g-plus{
+  font-family: 'Gentium Basic', serif;
+  color:white;
+  width: 5rem;
+  text-align:center;
+  height:5rem;
+  position:relative;
+  transition: 1s all ease;
+}
+
+.gplus-inner{
+  transition: 1s all ease;
+  font-size:200%;
+  text-align:center;
+  height:5rem;
+  width:100%;
+  transform: translate(25%, 0);
+}
+
+.gplus-inner:after{
+  transition:inherit;
+  position:absolute;
+  padding-right:50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  content:"g+";
+}
+
+.g-plus:hover{
+  background:black;
+}
+
+.g-plus:hover .gplus-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}
+
+@keyframes bounce{
+  0%{top:initial;}
+  1%{top:0%;}
+  3%{top:10%;}
+  7%{top:19%;}
+  10%{top:38%;}
+  20%{top:50%;}
+  30%{top:40%;}
+  40%{top:50%;}
+  50%{top:42%;}
+  60%{top:50%;}
+  70%{top:44%;}
+  80%{top:50%;}
+  90%{top:46%;}
+  100%{top:50%;}
+}
+
+.codepen{
+  position:relative;
+  height:5rem;
+  width:5rem;
+  transition: 1s all ease;
+}
+
+.codepen-inner{
+  height:100%;
+  width:100%;
+  transition:inherit;
+}
+
+.codepen-inner:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height:75%;
+  width:75%;
+  background: url(http://i304.photobucket.com/albums/nn192/taterandjoes/codepen-512-black_zpsv9y3362v.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.codepen:hover{
+  background:black;
+}
+
+.codepen:hover .codepen-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}
+
+@keyframes roll-right{
+  from {
+    left:-100%;
+    transform: rotate(0deg);
+  }
+  to{
+    left:0;
+    transform: rotate(2160deg);
+  }
+}

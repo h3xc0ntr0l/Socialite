@@ -1,0 +1,31 @@
+.github{
+  position:relative;
+  height:5rem;
+  width:5rem;   
+/*  overflow:hidden;*/
+  transition: 1s ease;
+  filter:blur(50%);
+}
+
+.github:hover{
+  background:black;
+}
+
+.github-inner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  content:"";
+  height:70%;
+  width:70%;
+  background: url(../img/ghub.png);
+  background-repeat:no-repeat; 
+  background-size:contain;
+}
+
+.github:hover .github-inner{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function: ease;
+}

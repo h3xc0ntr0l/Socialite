@@ -1,0 +1,35 @@
+.codepen{
+  position:relative;
+  height:5rem;
+  width:5rem;
+  transition: 1s all ease;
+}
+
+.codepen-inner{
+  height:100%;
+  width:100%;
+  transition:inherit;
+}
+
+.codepen-inner:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height:75%;
+  width:75%;
+  background: url(../img/codepen.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.codepen:hover{
+  background:black;
+}
+
+.codepen:hover .codepen-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}

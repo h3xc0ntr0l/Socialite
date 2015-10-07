@@ -1,0 +1,36 @@
+
+.twitter{
+  position:relative;
+  height:5rem;
+  width:5rem;
+  transition: all 1s ease;
+}
+
+.twitter-inner{
+  position:absolute;
+  transition: inherit;
+  height:50%;
+  width:50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/twitter.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+.roll-right{
+  animation-name: roll-right;
+  animation-duration: 1.5s;
+  animation-timing: ease;
+  overflow:hidden;
+}
+
+.twitter:hover{
+  background-color: #3398FF;
+}
+
+.twitter:hover .twitter-inner{
+  animation-name: bounce;
+  animation-duration: 1.5s;
+}

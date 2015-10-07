@@ -1,0 +1,39 @@
+
+.g-plus{
+  font-family: 'Gentium Basic', serif;
+  color:white;
+  width: 5rem;
+  text-align:center;
+  height:5rem;
+  position:relative;
+  transition: 1s all ease;
+}
+
+.gplus-inner{
+  transition: 1s all ease;
+  font-size:200%;
+  text-align:center;
+  height:5rem;
+  width:100%;
+  transform: translate(25%, 0);
+}
+
+.gplus-inner:after{
+  transition:inherit;
+  position:absolute;
+  padding-right:50%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  content:"g+";
+}
+
+.g-plus:hover{
+  background:black;
+}
+
+.g-plus:hover .gplus-inner:after{
+  animation-name: bounce;
+  animation-duration:1.5s;
+  animation-timing-function:ease;
+}
