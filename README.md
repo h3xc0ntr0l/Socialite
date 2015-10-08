@@ -1,16 +1,16 @@
 # Socialite - Elegant social media plugins for Bootstrap
-
 ## INFANT project! Less than 1 week old, come contribute!
-
+###[Demo]
 ##### The easiest way to learn these components. ALL icons are simply wrapped in a column, with a container element
  aptly named after the social media you are writing markup for (e.g., class="facebook" for the facebook icon        container), and then there is an inner element (with the exception of facebook, [social media]-inner is the rule).
 
+##Icons
 
-Simple usage example:
+###Simple usage example:
 ```
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row smr">
+        <div class="col-md-12 icon-col">
            
            <!-- facebook icon-->
            <div class="facebook">
@@ -40,32 +40,50 @@ Simple usage example:
 ````
 And that's it!
 
-###Another couple things...
+###Basic styles and corresponding classes
 
-###Transparent backgrounds
 
+####Circle
+`<div class="facebook circle">`
+`  <div class="fb-ic"></div>`
+`</div>`
+####Transparent
 ```
 <div class="facebook transparent">
-    <div class="fb-ic"></div>
+  <div class="fb-ic"></div>
+</div>
+```
+####Vertical (sidebar maybe?)
+```
+<div class="row smr">
+  <div class="col-md-12 vertical">
+    <div class="facebook">
+      <div class="fb-ic"></div>
+    </div>
+  </div>
 </div>
 ```
 
-###Circular Icons
+### Animations (under heavy development)
+
+####Roll right
 ```
-<div class="facebook circle">
-    <div class="fb-ic"></div>
+<div class="facebook roll-right">
+  <div class="fb-ic"></div>
 </div>
 ```
 
-###Various Animations are supported. Currently, changes are being made to refactor the bounce and a few other #####things into classes, but the base `roll-right` animation works.  Use as so:
 ```
-<div class="facebook circle roll-right">
-    <div class="fb-ic"></div>
+<div class="facebook bounce">
+  <div class="fb-ic"></div>
 </div>
 ```
+
+
 See index.html for more examples.
 
 
 TODO: Write Documentation... :))
 
 
+[demo]:http://h3xc0ntr0l.github.io/Socialite
