@@ -28,9 +28,6 @@
 /*need to figure out which of the above is needed. develop a module component!*/
 
 
-
-
-
 .transparent{
   background: transparent !important;
 }
@@ -62,3 +59,6 @@ html, body{
   border-radius: 50%;
 }
 
+.roll-right-anim{
+  top:initial;
+}
